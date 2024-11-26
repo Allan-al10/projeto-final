@@ -17,9 +17,9 @@ session_start();
     <div class="container">
         <div class="box2">
             <h2>Faça login</h2>
-            <form action="login.php" method="POST">
-                <label for="nome" class="form-label">Nome login:</label><br>
-                <input type="text" name="nome" required><br><br>
+            <form action="admin.php" method="POST">
+                <label for="cpf" class="form-label">CPF:</label><br>
+                <input type="text" name="cpf" required><br><br>
                 <label for="senha" class="form-label">Senha:</label><br>
                 <input type="password" name="senha" required><br><br>
                 Logar como: <a href="logar.php">Cliente</a><br>

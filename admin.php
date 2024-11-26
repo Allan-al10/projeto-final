@@ -7,14 +7,14 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
-$nome = $_POST['nome'];
+$cpf = $_POST['cpf'];
 $senha = $_POST['senha'];
-$query = "SELECT * FROM usuarios WHERE nome = '$nome' AND senha = '$senha'";
+$query = "SELECT * FROM usuarios WHERE cpf = '$cpf' AND senha = '$senha'";
 $result = $conn->query($query);
 if ($result->num_rows == 1) {
-    echo "<div class=container><div class=box><h1>Login bem-sucedido!<br><br> Seja bem vindo: $nome</h1></div></div>";
+    echo "<div class=container><div class=box><h1>Login bem-sucedido!<br><br> Seja bem vindo: $cpf</h1></div></div>";
 } else {
-    echo "<div class=container><div class=box><h1>Nome de usuário ou senha incorretos.</h1></div></div>";
+    echo "<div class=container><div class=box><h1>cpf de usuário ou senha incorretos.</h1></div></div>";
 }
 $conn->close();
 ?>
