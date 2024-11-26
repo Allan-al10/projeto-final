@@ -1,0 +1,40 @@
+.buttons
+{
+    display: flex;
+}
+.a
+{
+display: flex;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.box {
+    background-color: rgb(198, 198, 198);
+    padding: 25px;
+    width: 50vw;
+    height: 90vh;
+    border-radius: 10px;
+}
+.box2 {
+    background-color: rgb(198, 198, 198);
+    padding: 25px;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 10px;
+}
+body {
+    margin: 0;
+}
+input{
+    background-color: #9c9c9c;
+    border-radius: 10px;
+    padding: 8px;
+    width: 40vw;
+}
+
